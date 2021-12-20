@@ -34,9 +34,11 @@ body
 	font-size: 28px
 	line-height: 36px
 	text-align: center
+h1
+	margin: 0
 ul
- margin: 0
- padding: 0
+	margin: 0
+	padding: 0
 li
 	list-style-type: none
 p
@@ -47,6 +49,7 @@ iframe
 	max-width: 1110px
 	width: 100%
 	height: 555px
+
 .hero
 	background: url('../img/bg-hero.jpg') no-repeat center
 	background-size: cover
@@ -73,7 +76,8 @@ iframe
 .video
 	padding-top: 100px
 	padding-bottom: 63px
-
+	&-block
+		padding: 0 10px
 .offer
 	padding-top: 100px
 	padding-bottom: 63px
@@ -131,3 +135,41 @@ iframe
 	&-button
 		width: 100%
 		max-width: 470px
+
+@media (max-width: 700px)
+	.title
+		font-size: 48px
+		line-height: 70px
+	.subtitle
+		font-size: 18px
+		line-height: 36px
+	.text
+		font-size: 16px
+		line-height: 36px
+	.button
+		font-size: 13px
+		padding-top: 10px
+		padding-bottom: 10px
+	.hero
+		padding-top: 60px
+		padding-bottom: 40px
+		&-text
+			width: 285px
+	iframe
+		height: 310px
+	.offer
+		&-item
+			&__text
+				width: 310px
+				line-height: 20px
+	.form
+		padding: 60px 0
+		&-block
+			padding: 0 10px
+		&-label, &-input
+			font-size: 13px
+			margin-bottom: 10px
+		&-label
+			line-height: 10px
+		&-input
+			padding: 10px 0 10px 20px
